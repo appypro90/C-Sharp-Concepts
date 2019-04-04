@@ -8,6 +8,25 @@ namespace CSharpConcepts
 {
     class UserDefinedVariables
     {
+        //declaration of class and struct.
+        
+    }
 
+    enum petType
+    {
+        Dog,
+        Duck
+    }
+
+    class PetClass
+    {
+        public petType Type;
+        public int Legs;
+    }
+
+    struct PetStruct
+    {
+        public petType Type;
+        public int Legs;
     }
 }

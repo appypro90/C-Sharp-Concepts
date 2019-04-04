@@ -11,12 +11,12 @@ namespace CSharpConcepts
         static void Main(string[] args)
         {            
                       
-            //string to int. returns boolean. If true returns result.
+            //converting string to int. returns boolean. If true returns result.
             string myVariable = "45";
-            string anotherVariable = "Sen";
+            //string anotherVariable = "Sen";
             int number = 5;
             Int32.TryParse(myVariable, out number);//manipulates number variable and returns that.
-            Int32.Parse(anotherVariable);
+            //Int32.Parse(anotherVariable);
             Console.WriteLine(number);
 
             //int to string.
@@ -24,9 +24,18 @@ namespace CSharpConcepts
             Convert.ToString(numberX);
             Console.WriteLine(numberX);
 
+            //User Defined Variables.
+            //Reference type. You need to instantiate class first before use.
+            PetClass pet = new PetClass();
+            pet.Type = petType.Dog;
+            pet.Legs = 4;
+            Console.WriteLine("A " + pet.Type + " has " + pet.Legs + " legs.");
 
-
-
+            //Value type. You can declare and use it.
+            PetStruct petStruct;
+            petStruct.Type = petType.Duck;
+            petStruct.Legs = 2;
+            Console.WriteLine("A " + petStruct.Type + " has " + petStruct.Legs + " legs.");
            
             Console.ReadLine();
         }
