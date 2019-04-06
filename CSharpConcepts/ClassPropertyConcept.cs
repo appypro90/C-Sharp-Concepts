@@ -8,7 +8,7 @@ namespace CSharpConcepts
 {
     class ClassPropertyConcept
     {
-        //Usually fields with getter and setter is called property
+        //Usually fields with getter and setter is called property.
         private DateTime date;
         private double _seconds; 
         
