@@ -8,5 +8,6 @@ namespace CSharpConcepts
 {
     class ClassMethodConcept
     {
+
     }
 }
