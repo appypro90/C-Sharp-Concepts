@@ -36,10 +36,20 @@ namespace CSharpConcepts
             B2.Print();//It will print base class method.
             ChildClass2 C2 = new ChildClass2();
             C2.Print();//It will print child class method.
-            
 
-
-
+            //Example of Interface
+            AddNumber Add = new AddNumber
+            {
+                Number1 = 15,
+                Number2 = 10
+            };
+            Console.WriteLine(Add.CalculateNumber());
+            SubtractNumber Sub = new SubtractNumber
+            {
+                Number1 = 15,
+                Number2 = 10
+            };
+            Console.WriteLine(Sub.CalculateNumber());
         }
     }
 }

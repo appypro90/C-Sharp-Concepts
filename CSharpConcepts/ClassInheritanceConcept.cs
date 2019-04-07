@@ -12,7 +12,7 @@ namespace CSharpConcepts
     }
 
     //Public class can be accessed, inherited from every project but can not be instantiated.
-    public class BaseClass
+    public  class BaseClass
     {
        private int Id { get; set; }
        internal string Name { get; set; }
