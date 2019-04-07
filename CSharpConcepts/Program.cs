@@ -21,7 +21,25 @@ namespace CSharpConcepts
             classPropertyConcept.hour = 25;
             Console.WriteLine(classPropertyConcept.Date);
 
-            //To clear class Methods concept.
+            //To clear class inheritance concept.
+
+            //Base class instance can point to a child class instance.
+            //Base class virtual(method and property) will be overriden by child class object though variable could be of base class..
+            //Example of method overriding.
+            BaseClass B1 = new ChildClass1();
+            B1.Print();//it will print overriden version.
+            ChildClass1 C1 = new ChildClass1();
+            C1.Print(); //By default it will call child class method.
+
+            //Example of method hiding.
+            BaseClass B2 = new ChildClass2();
+            B2.Print();//It will print base class method.
+            ChildClass2 C2 = new ChildClass2();
+            C2.Print();//It will print child class method.
+            
+
+
+
         }
     }
 }
