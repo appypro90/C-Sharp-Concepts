@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassFieldConcept.cs" />
+    <Compile Include="ClassGenericoncept.cs" />
     <Compile Include="ClassInheritanceConcept.cs" />
     <Compile Include="IInterface.cs" />
     <Compile Include="ClassPropertyConcept.cs" />

@@ -50,6 +50,21 @@ namespace CSharpConcepts
                 Number2 = 10
             };
             Console.WriteLine(Sub.CalculateNumber());
+
+            //To clear Generic concepts.
+            //Primary steps.
+            ClassGenericoncept<int, int, string> classGenericoncept = new ClassGenericoncept<int, int, string>();
+            bool result1 = classGenericoncept.CompareWith50(51);
+            bool result2 = classGenericoncept.CompareTwoValues(51, 66);
+            bool result3 = classGenericoncept.CompareTwoTypes(51, "51");
+
+            Console.WriteLine("Generic class compare with 50 - " + result1);
+            Console.WriteLine("Generic class compare two values - " + result2);
+            Console.WriteLine("Generic class Compare Two Types - " + result3);
+
+            //Advance steps
+
+
         }
     }
 }
