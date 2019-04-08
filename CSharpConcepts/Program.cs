@@ -52,6 +52,7 @@ namespace CSharpConcepts
             Console.WriteLine(Sub.CalculateNumber());
 
             //To clear Generic concepts.
+
             //Primary steps.
             ClassGenericoncept<int, int, string> classGenericoncept = new ClassGenericoncept<int, int, string>();
             bool result1 = classGenericoncept.CompareWith50(51);
@@ -71,7 +72,14 @@ namespace CSharpConcepts
             };
             Console.WriteLine("Advance generic number is " + genericAdvance.Calculate.CalculateNumber());
 
-
+            //Partial class concept.
+            PartialClassConcept PCC = new PartialClassConcept
+            {
+                Names = new List<string>()
+            };
+            PCC.Names.Add("Arpita Sen");
+            string name = PCC.Names.SingleOrDefault(e => e.StartsWith("A"));
+            Console.WriteLine("Partial class value is " + name);
 
         }
     }

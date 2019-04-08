@@ -48,6 +48,7 @@
     <Compile Include="ClassInheritanceConcept.cs" />
     <Compile Include="IInterface.cs" />
     <Compile Include="ClassPropertyConcept.cs" />
+    <Compile Include="PartialClassConcept.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
