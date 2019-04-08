@@ -62,7 +62,15 @@ namespace CSharpConcepts
             Console.WriteLine("Generic class compare two values - " + result2);
             Console.WriteLine("Generic class Compare Two Types - " + result3);
 
-            //Advance steps
+            //Advance steps of Generics.
+            GenericAdvance<AddNumber> genericAdvance = new GenericAdvance<AddNumber>();
+            genericAdvance.Calculate = new AddNumber
+            {
+                Number1 = 10,
+                Number2 = 15
+            };
+            Console.WriteLine("Advance generic number is " + genericAdvance.Calculate.CalculateNumber());
+
 
 
         }

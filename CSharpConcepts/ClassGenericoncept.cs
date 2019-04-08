@@ -27,7 +27,9 @@ namespace CSharpConcepts
     }
 
     public class GenericAdvance<T>
+        where T : ICalculate
     {
         public Guid Id { get; set; }
+        public T Calculate { get; set; }
     }
 }

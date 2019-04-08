@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpConcepts
 {
-    interface ICalculate
+    public interface ICalculate
     {
         //by default interface members are public. No need to mention it.
         //It does not contain fields.
